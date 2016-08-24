@@ -9,10 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
 
+    @IBOutlet weak var theLabel: UILabel!
+    
+    var pushed = 0
+    
+    
+    @IBAction func buttonTapped(_ sender: AnyObject) {
+        theLabel.text = "What is up friends?"
+        pushed = pushed + 1
+        print(pushed)
+        
+        if pushed < 10 {
+          theLabel.text = "Wow you are tapping like crazy"
+        } else if  pushed > 15 {
+            theLabel.text = "Slow down man"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
