@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         pushed = pushed + 1
         print(pushed)
         
-        if pushed < 10 {
+        if pushed < 20 {
           theLabel.text = "Wow you are tapping like crazy"
         } else if  pushed > 15 {
             theLabel.text = "Slow down man"
