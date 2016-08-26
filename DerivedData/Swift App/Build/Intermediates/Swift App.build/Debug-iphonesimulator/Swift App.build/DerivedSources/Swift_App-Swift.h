@@ -131,13 +131,15 @@ SWIFT_CLASS("_TtC9Swift_App11AppDelegate")
 @end
 
 @class UILabel;
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9Swift_App14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified theLabel;
-@property (nonatomic) NSInteger pushed;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified text1;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified text2;
 - (IBAction)buttonTapped:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

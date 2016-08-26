@@ -14,19 +14,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
-    var pushed = 0
+    @IBOutlet weak var text1: UITextField!
     
-    
+    @IBOutlet weak var text2: UITextField!
+   
     @IBAction func buttonTapped(_ sender: AnyObject) {
-        theLabel.text = "What is up friends?"
-        pushed = pushed + 1
-        print(pushed)
         
-        if pushed < 20 {
-          theLabel.text = "Wow you are tapping like crazy"
-        } else if  pushed > 15 {
-            theLabel.text = "Slow down man"
-        }
+        print(text1.text!)
+        print(text2.text!)
+        
     }
     
     override func viewDidLoad() {
